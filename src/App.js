@@ -40,6 +40,7 @@ function AboutSection() {
             href="https://drive.google.com/drive/folders/1Owk_0cSTYyc7vHXrRDNCNFyC7A_YenFB"
             className="button n01"
             role="button"
+             rel="noopener noreferrer"
             target="_blank"
           >
             <span className="label">Web content</span>
@@ -51,6 +52,7 @@ function AboutSection() {
             href="https://drive.google.com/drive/folders/1jzq5VyQXvWp0qDbzXxE1MYoCe86NOmwt"
             className="button n02"
             role="button"
+             rel="noopener noreferrer"
             target="_blank"
           >
             <span className="label">Freelancing work</span>
@@ -58,7 +60,7 @@ function AboutSection() {
         </li>
 
         <li>
-          <a href="https://www.mailmodo.com/guides/author/nitesh-chand/" className="button n03" role="button" target="_blank">
+          <a href="https://www.mailmodo.com/guides/author/nitesh-chand/"  rel="noopener noreferrer" className="button n03" role="button" target="_blank">
             <span className="label">Mailmodo</span>
           </a>
         </li>
