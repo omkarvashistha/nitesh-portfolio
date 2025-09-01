@@ -23,7 +23,7 @@
   stroke-width: 3px;
 }
 
-.card .mail svg:hover {
+.card .mail svg {
   stroke: #f55d56;
 }
 
@@ -138,17 +138,17 @@
   background: #f55d56;
 }
 
-.card:hover {
+.card {
   border-top-left-radius: 55px;
 }
 
-.card:hover .bottom {
+.card .bottom {
   top: 20%;
   border-radius: 80px 29px 29px 29px;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
-.card:hover .profile-pic {
+.card .profile-pic {
   width: 100px;
   height: 100px;
   aspect-ratio: 1;
@@ -161,19 +161,13 @@
   transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
 }
 
-.card:hover .profile-pic:hover {
-  transform: scale(1.3);
-  border-radius: 0px;
-}
-
-.card:hover .profile-pic img {
-  transform: scale(2);
-  -o-object-position: 0px 10px;
-  object-position: 0px 10px;
+.card .profile-pic img {
+  -o-object-position: 0px 1px;
+  object-position: 1px -2px;
   transition: all 0.5s ease-in-out 0.5s;
 }
 
-.card:hover .profile-pic svg {
+.card .profile-pic svg {
   transform: scale(2.5);
   transition: all 0.5s ease-in-out 0.5s;
 }
