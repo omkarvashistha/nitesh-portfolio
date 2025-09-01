@@ -1,4 +1,3 @@
-import react, { useState } from "react";
 import './Services.scss'
 
 const Services = () => {

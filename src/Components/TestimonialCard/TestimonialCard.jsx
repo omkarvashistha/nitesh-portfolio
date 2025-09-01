@@ -1,4 +1,3 @@
-import react from "react";
 import './TestimonialCard.scss'
 
 const TestimonialCard = ({name = 'devin',pfp = 'user.png',description = ''}) => {
