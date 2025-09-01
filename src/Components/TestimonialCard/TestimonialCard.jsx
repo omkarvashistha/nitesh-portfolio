@@ -5,7 +5,7 @@ const TestimonialCard = ({name = 'devin',pfp = 'user.png',description = ''}) => 
     return (
         <div className="testmonial-card-main">
             <div className="left-section">
-                <img src={pfp} />
+                <img src={pfp} alt="nitesh profile dp"/>
             </div>
 
             <div className="right-section">
