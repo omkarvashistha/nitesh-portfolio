@@ -1,0 +1,21 @@
+import react from "react";
+import './TestimonialCard.scss'
+
+const TestimonialCard = ({name = 'devin',pfp = 'user.png',description = ''}) => {
+    return (
+        <div className="testmonial-card-main">
+            <div className="left-section">
+                <img src={pfp} />
+            </div>
+
+            <div className="right-section">
+                <h3>{name}</h3>
+                <span>
+                    {description}
+                </span>
+            </div>
+        </div>
+    )
+}
+
+export default TestimonialCard
