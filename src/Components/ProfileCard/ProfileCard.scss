@@ -90,7 +90,7 @@
 
 .card .bottom .content .about-me {
   display: block;
-  font-size: 1rem;
+  
   color: white;
 }
 
@@ -170,4 +170,22 @@
 .card .profile-pic svg {
   transform: scale(2.5);
   transition: all 0.5s ease-in-out 0.5s;
+}
+
+@media (max-width : 520px) {
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .name {
+    font-size: 1rem;
+  }
+
+  .about-me {
+    font-size: 0.8rem;
+  }
+
+  .about-me-more {
+    font-size: 0.7rem;
+  }
 }

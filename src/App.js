@@ -5,20 +5,11 @@ import TestimonialCard from './Components/TestimonialCard/TestimonialCard';
 
 function App() {
   return (
-    <div className='main'
-      style={{
-        height: '130vh', // fallback to 100vh/100svh if needed via CSS
-        // layer gradient (on top) + image (below)
-        backgroundImage:
-          "conic-gradient(from 360deg at 50% 50%, rgba(143,119,181,0.729) 0%, rgba(64,65,71,0.69) 0%), url('/bg1.jpg')",
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'scroll',
-        margin: 0,
-      }}
-    >
+    <>
+    <div className='main'>
         <AboutSection/>
-        <div className='footer'>
+    </div>
+    <div className='footer'>
           <div className="social-links-container">
             <a href="https://www.instagram.com/nick_the_comedian/" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999" viewBox="0 0 16 15.999" src="https://www.instagram.com/nick_the_comedian/">
@@ -40,8 +31,8 @@ function App() {
                 </svg>
             </a>   
           </div>
-        </div>
     </div>
+    </>
   );
 }
 
@@ -60,37 +51,28 @@ function AboutSection() {
   ]
 
   return (
-    <div className="inner">
-      <div className='left-section'>
-        {/* <div className='intro-section'>
-        <h1 id="text01" style={{ opacity: 1, transform: 'none' }}>Nitesh Chand</h1>
-        <p id="text12" style={{ opacity: 1, transform: 'none' }}>
-          <span className="p">
-            Since I was a kid, I’ve always had an eye for detail and a passion for
-            <br />
-            expressing my thoughts as accurately as possible on a blank page. As I
-            <br />
-            grew older, I realized that writing became my true passion for two main
-            <br />
-            reasons: first, it allows me to convey the authentic creativity I’m blessed (or
-            <br />
-            cursed) with, and second, it provides me with a tangible flow that feels
-            <br />
-            natural and fulfilling in what often feels like an otherwise meaningless
-            <br />
-            charade we call life.
-          </span>
-        </p>
-        </div> */}
-        <ProfileCard />
-
-        <div className='article-links'>
-          
-          <Services />
+    <div className="inner"
+    >
+      <div className='first-section'
+        style={{
+        backgroundImage:
+          "conic-gradient(from 360deg at 50% 50%, rgba(143,119,181,0.729) 0%, rgba(64,65,71,0.69) 0%), url('/background.jpg')",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'scroll',
+        margin: 0,
+      }}
+      >
+        <div className='left-section'>
+          <ProfileCard />
+        </div>
+        <div className='right-section'>
+              <Services />
         </div>
       </div>
-
-      <div className='right-section'>
+      
+      
+      <div className='second-section'>
         <div className='testimonial-section'>
           <h1>Testimonials</h1>
           <div className='testimonial-cards-section'>
@@ -103,12 +85,9 @@ function AboutSection() {
               />
             ))}
           </div>
-          
         </div>
       </div>
-      
-      
-      
+        
     </div>
   );
 }

@@ -1,15 +1,20 @@
 .Services-main {
-    margin-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5%;
 }
 
+.testimonial-cards-section{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
 
 .glass-radio-group {
   --bg: rgba(255, 255, 255, 0.06);
   --text: #e5e5e5;
-
+  min-width: 300px;
   display: flex;
   position: relative;
   background: var(--bg);
@@ -20,7 +25,7 @@
     inset -1px -1px 6px rgba(0, 0, 0, 0.3),
     0 4px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  width:60%;
+  width:80%;
   padding: 1%;
 }
 
@@ -116,6 +121,10 @@
 
   border-radius: 1rem;
   box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+
+  @media (max-width : 435px) {
+    width : 90%;
+  }
 }
 
 .card-service .card-service-border {
@@ -176,7 +185,7 @@
 
 .card-service .card-service_title-container .card-service_paragraph {
   margin-top: 0.25rem;
-  width: 65%;
+  width: 85%;
 
   font-size: 0.5rem;
   color: var(--paragraph);
