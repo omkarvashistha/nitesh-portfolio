@@ -103,7 +103,11 @@ const ServicesSection = () => {
           </li>
         ))}
       </ul>
-      <button className="button">Contact me</button>
+      <button className="button">
+        <a href="https://www.linkedin.com/in/nitesh-chand1998/" target="_blank" rel="noreferrer" style={{textDecoration : 'none',color : 'white'}}>
+              Contact Me
+            </a>
+      </button>
     </div>
   );
 };
@@ -125,6 +129,16 @@ const WorkSample = () => {
           key : 3,
           title : "Mailmodo",
           link : "https://www.mailmodo.com/guides/author/nitesh-chand/",
+      },
+      {
+          key : 4,
+          title : "Voda cleaning & restoration blogs",
+          link : "https://drive.google.com/drive/folders/1LpBhXqC3Z35vxcMxhq96xCNEVTx9fybX",
+      },
+      {
+          key : 5,
+          title : "Blogs for multiple US companies",
+          link : "https://docs.google.com/spreadsheets/d/1PJquubyDRD3o4Hm1rpjaqaez6rV7klmjGn0GJjdSEgY/edit?usp=drivesdk",
       },
   ]
   return (
@@ -165,7 +179,11 @@ const WorkSample = () => {
           </li>
         ))}
       </ul>
-      <button className="button">Contact me</button>
+      <button className="button">
+        <a href="https://www.linkedin.com/in/nitesh-chand1998/" target="_blank" rel="noreferrer" style={{textDecoration : 'none',color : 'white'}}>
+              Contact Me
+            </a>
+      </button>
     </div>
   )
 }

@@ -43,8 +43,10 @@ const ProfileCard = () => (
         </div>
 
         <div>
-          <button className="button">
-            Contact Me
+          <button className="button" >
+            <a href="https://www.linkedin.com/in/nitesh-chand1998/" target="_blank" rel="noreferrer" style={{textDecoration : 'none',color : 'black'}}>
+              Contact Me
+            </a>            
           </button>
         </div>
       </div>
